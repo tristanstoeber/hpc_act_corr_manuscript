@@ -1,0 +1,84 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{natbib}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{The influence of salient experiences on hippocampal activity correlations}
+\author{Tristan Stöber}
+\date{October 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+\begin{itemize}
+    \item There is an unresolved conundrum: Plasticity between CA3 and CA2 is strongly limited by a number of mechanisms \citep{zhao2007synaptic, lee2010rgs14, carstens2016perineuronal}, however generally unlocking this plasticity improves learning performance in a spatial navigation task\citep{lee2010rgs14}. So if it improves learning, why is it limited in the first place \citep{lehr2021ca2}?
+    \item In \cite{stober2020selective} we postulated that the limited plasticity between CA3-CA2 allows to prioritize specific salient experiences during subsequent replay by allowing co-active cell assemblies in CA3 and CA2 to interact upon the release of neuromodulation.
+    \item Such interactions should lead to differences in the correlation structure of neurons in CA3 and CA2: Cells co-active during an important experience should increase their coordinated activity shortly after the experience and this should last for some time. In contrast, a similar experience without a saliency signal should not be accompanied by such an increase.
+    \end{itemize}
+
+\section{Methods}
+\subsection{Data}
+\begin{itemize}
+    \item Large scale recordings with high density probes of CA3 and CA2 pyramidal neurons have been conducted and are available upon request \citep{oliva2020hippocampal}. These data include recordins with and wihtout salient experiences - empty area vs social stimulus.
+    \item Access to the data has already been requested. However, until then, we can develop the full analysis pipeline on freely available online data \citep{mizuseki2014neurosharing}\footnote{https://crcns.org/data-sets/hc/hc-3/about-hc-3}.
+    \item Such data is already spike sorted. Thus we will have the time points of action potentials for each units. Units are defined as clusters of spikes for a given tetrode.
+    \item TODO: Tristan - Explore colab for storing and analysing data
+\end{itemize} 
+
+\subsection{Pair-wise correlations}
+Determining the correlation between individual pairs of neurons is straight forward: 
+\begin{enumerate}
+    \item Activity is binned - counting the number of action potentials for each neuron per time window.
+    \item Vectors of neural activity can be correlated with preimplented Python functions such as numpy.correlate
+\end{enumerate} 
+
+\subsection{Computing platform}
+To allow everyone access to computing power and storage, its easiest if we work together on Juypter notebooks hosted on Google Colab.
+
+\section{Results}
+\subsection{Baseline correlations}
+Characterize correlation structure. Key questions here: What is the baseline correleation between different neurons within and across hippocampal subregions? How does it change with time?
+
+Can we identify clusters of correlated neurons? 
+
+\begin{figure}[H]
+ \centering
+  \begin{subfigure}[b]{0.29\textwidth}
+     \centering
+     \includesvg[height=0.17\textheight]{figures/1a_activation_function.svg}
+     \caption{}
+     \label{fig:SeqComp_ActivationFunction}
+ \end{subfigure}
+ \hfill     
+    \caption{
+    \textbf{Baseline correlations across hippocampal subregions.}
+    \textbf{a)}
+}
+    \label{fig:SeqComp_SingleSequence}
+\end{figure}
+
+
+\section{Milestones}
+\begin{enumerate}
+    \item Load freely available data and convert activity levels of individual neurons into vectors
+    \item 
+    \item Add CA3-CA2 recordings and study the effect of social experiences on the correlation structure
+\end{enumerate}
+\bibliographystyle{plainnat}
+\bibliography{bib}
+
+\end{document}
