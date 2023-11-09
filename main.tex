@@ -1,23 +1,85 @@
-\documentclass[a4paper]{article}
-
+\documentclass{article}
 %% Language and font encodings
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{natbib}
-
+\usepackage{tcolorbox}
+\usepackage{listings}
 %% Sets page size and margins
 \usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 
 %% Useful packages
 \usepackage{amsmath}
 \usepackage{graphicx}
-\usepackage[colorinlistoftodos]{todonotes}
-\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[colorlinks=true, allcolors=black]{hyperref}
+%\usepackage{subfig}
+%\usepackage{cite}
+\usepackage{natbib}
+\usepackage{multirow}
+\usepackage{diagbox}
+\usepackage{bbold}
+\usepackage[font=small]{caption}
+%\usepackage[labelformat = empty,position=top]{subcaption}
+\usepackage[position=top]{subcaption}
+\usepackage[export]{adjustbox}
+\usepackage[inline]{enumitem}
+\usepackage{comment}
+\usepackage{svg}
+\usepackage{fullpage}
+\usepackage{times}
+\usepackage[]{ccaption}
+\usepackage{fancyhdr,graphicx,amsmath,amssymb}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{breqn}
+\usepackage{authblk}
+\usepackage{placeins}
+\usepackage{cleveref}
 
-\title{The influence of salient experiences on hippocampal activity correlations}
-\author{Tristan Stöber}
-\date{October 2023}
+\include{pythonlisting}
+% figure float
+\usepackage{float}
+
+\usepackage{enumitem}
+\usepackage{bbding}
+\usepackage{breqn}
+
+\setlength{\parskip}{1em}
+%\setlength{\parindent}{0pt}
+\newcommand\wordcount{
+    \immediate\write18{texcount -sub=section main_framework.tex  | grep "Section" | sed -e 's/+.*//' | sed -n \thesection p > 'count.txt'}
+(\input{count.txt}words)}
+\newcommand\lword[1]{\leavevmode\nobreak\hskip0pt plus\linewidth\penalty50\hskip0pt plus-\linewidth\nobreak\textbf{#1}}
+\newcommand{\beginsupplement}{%
+        \setcounter{table}{0}
+        \renewcommand{\thetable}{S\arabic{table}}%
+        \setcounter{figure}{0}
+        \renewcommand{\thefigure}{S\arabic{figure}}%
+     }
+
+% Necessary for dashed multicolumn
+%\newcommand{\fulldashfill}{\hspace{0.1em}\leaders\hbox{-\hspace{0.1em}}\hfill\kern0pt\hspace{0.1em}}
+%\newcommand{\dashmulticolumn}[3]{\multicolumn{#1}{#2}{\fulldashfill #3 \fulldashfill}}
+\newcommand{\fulldashfill}{\leaders\hbox{-\hspace{0.05em}}\hfill\kern0pt}
+\newcommand{\dashmulticolumn}[3]{\multicolumn{#1}{#2}{\fulldashfill{}#3\fulldashfill}}
+
+% Line numbers
+\usepackage{lineno}
+\linenumbers
+%newcommand{\R}[1]{\label{#1}\linelabel{#1}}
+\newcommand{\R}[1]{\linelabel{#1}}
+%\newcommand{\lr}[1]{page~\pageref{#1}, line~\lineref{#1}}
+\newcommand{\lr}[1]{\lineref{#1}}
+
+\usepackage{setspace}
+\doublespacing
+
+\title{Activity correlations across the hippocampal formation}
+\author[1]{Co-authors} % to be replaced later
+\author[2,3,\Envelope]{Tristan M. St\"ober}
+\affil[1]{Students IDS group 37}
+\affil[2]{Institute for Neural Computation, Ruhr University Bochum, Germany}
+\affil[3]{Department of Neurology, University Hospital Frankfurt, Frankfurt, Germany}
+\affil[\Envelope]{Correspondence: tristan.stoeber@posteo.net}
 
 \begin{document}
 
@@ -59,14 +121,14 @@ Can we identify clusters of correlated neurons?
  \centering
   \begin{subfigure}[b]{0.29\textwidth}
      \centering
-     \includesvg[height=0.17\textheight]{figures/1a_activation_function.svg}
+     \includesvg[height=0.17\textheight]{figures/fig_1a_corr_suggstd.svg}
      \caption{}
      \label{fig:SeqComp_ActivationFunction}
  \end{subfigure}
  \hfill     
     \caption{
     \textbf{Baseline correlations across hippocampal subregions.}
-    \textbf{a)}
+    \textbf{a) Suggested Figure: Example correlation matrix across hippocampal subregions for a given during behavior XXX.  }
 }
     \label{fig:SeqComp_SingleSequence}
 \end{figure}
