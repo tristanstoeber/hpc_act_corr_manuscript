@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="79.452522mm"
+   height="85.457436mm"
+   viewBox="0 0 79.452522 85.457436"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="fib_1c_corr_sugg_mean.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.98520767"
+     inkscape:cx="367.43522"
+     inkscape:cy="371.49528"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-6.7749573,-7.3743008)">
+    <text
+       xml:space="preserve"
+       style="font-size:5.29167px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="12.606854"
+       y="11.39473"
+       id="text3224"><tspan
+         sodipodi:role="line"
+         id="tspan3222"
+         style="font-size:5.29167px;stroke-width:0.264583"
+         x="12.606854"
+         y="11.39473">Mean activity correlation</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:5.29167px;stroke-width:0.264583"
+         x="12.606854"
+         y="18.009317"
+         id="tspan17020"> across behavioral states</tspan></text>
+    <rect
+       style="fill:#b5de2b;fill-opacity:0.290196;stroke:#f1f1f1;stroke-width:0.264999;stop-color:#000000"
+       id="rect4144"
+       width="16.36384"
+       height="31.327185"
+       x="19.465281"
+       y="33.762638" />
+    <rect
+       style="fill:#35b779;fill-opacity:0.290196;stroke:#f1f1f1;stroke-width:0.238567;stop-color:#000000"
+       id="rect4144-1"
+       width="16.36384"
+       height="25.389498"
+       x="43.990273"
+       y="39.713543" />
+    <rect
+       style="fill:#26828e;fill-opacity:0.290196;stroke:#f1f1f1;stroke-width:0.28741;stop-color:#000000"
+       id="rect4144-1-2"
+       width="16.36384"
+       height="36.850021"
+       x="69.719933"
+       y="28.228598"
+       inkscape:transform-center-x="16.061191"
+       inkscape:transform-center-y="-6.313313" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 13.64445,64.860927 c 24.146439,0 48.292878,0 72.439317,0"
+       id="path4533"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 13.64155,65.089823 V 23.247597"
+       id="path4648"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="-80.369225"
+       y="53.107151"
+       id="text7228"
+       transform="rotate(-71.370598)"><tspan
+         sodipodi:role="line"
+         id="tspan7226"
+         style="font-size:4.93889px;stroke-width:0.264583"
+         x="-80.369225"
+         y="53.107151">behavior 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="-72.442482"
+       y="76.550636"
+       id="text7228-8"
+       transform="rotate(-71.370598)"><tspan
+         sodipodi:role="line"
+         id="tspan7226-9"
+         style="font-size:4.93889px;stroke-width:0.264583"
+         x="-72.442482"
+         y="76.550636">behavior 2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="-64.66954"
+       y="100.02731"
+       id="text7228-8-3"
+       transform="rotate(-71.370598)"><tspan
+         sodipodi:role="line"
+         id="tspan7226-9-6"
+         style="font-size:4.93889px;stroke-width:0.264583"
+         x="-64.66954"
+         y="100.02731">behavior 3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="-66.409348"
+       y="10.527356"
+       id="text11966"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan11964"
+         style="font-size:4.93889px;stroke-width:0.264583"
+         x="-66.409348"
+         y="10.527356">Mean correlation</tspan></text>
+  </g>
+</svg>
